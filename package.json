@@ -1,0 +1,28 @@
+{
+  "name": "fuelprice-poll",
+  "version": "1.0.0",
+  "description": "Fetch fuelprices from Eric Hjelm Api and export metrics for promotheus of grafana agent to poll.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "metrics",
+    "exporter",
+    "fuel",
+    "price"
+  ],
+  "author": "A. Stromberg",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.5",
+    "prom-client": "^14.0.1"
+  },
+  "type": "module"
+}
