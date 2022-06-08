@@ -34,7 +34,7 @@ setInterval(() => {
             g.set({ type: '95octane' }, Number(octane95));
             g.set({ type: 'diesel' }, Number(diesel));
             g.set({ type: 'etanol' }, Number(etanol));
-            console.log(data);
+            // console.log(data);
         }).catch(new Error('Failed to read data from api.'));
     }).catch(err => {
         console.log(err);
@@ -57,7 +57,7 @@ server.get('/metrics', async (req, res) => {
 	}
 });
 
-const port = process.env.PORT || 9641;
+const port = process.env.PORT || 9414;
 console.log(
 	`Server listening to ${port}, metrics exposed on /metrics endpoint`,
 );
